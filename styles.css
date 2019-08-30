@@ -1,0 +1,216 @@
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+
+  width: 100%;
+}
+
+body {
+  padding: 20px 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #f8f8f8;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 50px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #888;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #444;
+}
+
+
+section {
+  width: 600px;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.dark {
+  background: #24252A;
+}
+
+.flex {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.bttn {
+  color: #838689;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+}
+a.bttn:hover {
+  color: #FFF;
+}
+a.bttn:focus {
+  color: #FFF;
+}
+
+a.bttn-dark {
+  color: #644cad;
+  text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s ease all;
+}
+a.bttn-dark:hover {
+  color: #FFF;
+}
+a.bttn-dark:focus {
+  color: #FFF;
+}
+
+.bttn {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+  font-weight: bold;
+  padding: 14px 0px;
+  border: 3px solid #838689;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.bttn:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #838689;
+  z-index: -2;
+}
+.bttn:hover:before{
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.bttn.sel {
+  border: 3px solid #5D4157;
+  color: #990044;
+}
+
+.bttn.sel:before {
+    background-color: #5D4157;
+}
+
+.bttn-dark {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+  font-weight: bold;
+  padding: 14px 0px;
+  border: 3px solid #644cad;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.bttn-dark:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #644cad;
+  z-index: -1;
+}
+.bttn-dark:hover:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.bttn-dark:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.bttn.one-fifth {
+  width: 16%;
+  margin: 1.5%;
+}
+
+#patrons {
+  border: 2px solid #444;
+  padding: 20px;
+  padding-top: 0;
+}
+
+/* Portrait */
+
+@media only screen
+
+and (max-device-width: 667px)
+
+and (orientation: portrait) {
+
+  body {
+    font-size: 0.8em;
+  }
+
+  .bttn {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+}
