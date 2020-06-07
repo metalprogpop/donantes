@@ -193,6 +193,11 @@ a.bttn-dark:focus {
   opacity: 1;
 }
 
+.bttn.one-half {
+  width: 45%;
+  margin: 2%;
+}
+
 .bttn.one-fourth {
   width: 20%;
   margin: 2%;
