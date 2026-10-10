@@ -1,0 +1,17 @@
+{
+  "name": "fanmail",
+  "private": true,
+  "type": "module",
+  "description": "Arma el draft del próximo fanmail en Mailchimp a partir de lo nuevo en S3",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1149.0",
+    "fast-xml-parser": "^5.11.2"
+  }
+}

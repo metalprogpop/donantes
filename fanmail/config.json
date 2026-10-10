@@ -1,0 +1,20 @@
+{
+  "aws": {
+    "profile": "metalprogpop",
+    "region": "sa-east-1",
+    "bucket": "metalprogpop"
+  },
+  "prefixes": {
+    "videos": "videos/",
+    "poneRec": "Poné REC/"
+  },
+  "partsPerProgram": 3,
+  "rssUrl": "https://audioboom.com/channels/4940203.rss",
+  "mailchimp": {
+    "listId": "616a9b32c2",
+    "fromName": "MetalProgPop Cast",
+    "replyTo": "aguante@metalprogpop.com",
+    "templateName": "Fanmail (donantes/fanmail/template.html)",
+    "campaignTitlePrefix": "Fanmail"
+  }
+}
